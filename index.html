@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+      }
+
+      .column {
+        width: 30%;
+        float: right;
+        border: 2px solid rgb(0, 0, 0);
+      }
+      .column2 {
+        width: 45%;
+        height: 100%;
+      }
+      .table2 {
+        width: 100%;
+        background-color: rgb(95, 138, 170);
+        border: 2px solid rgb(0, 0, 0);
+      }
+
+      /* Clearfix (clear floats) */
+
+      .tab1 {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+        float: left;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 50%;
+        border: 1px solid #ddd;
+        float: right;
+      }
+
+      th {
+        border: 3px solid rgb(190, 190, 190);
+        text-align: center;
+        padding: 16px;
+      }
+
+      td {
+        border: 3px solid rgb(190, 190, 190);
+        text-align: right;
+        padding: 16px;
+        font-size: 12px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #ffffff;
+      }
+
+      /* debut section deux */
+
+      .section2 {
+        margin-top: 40px;
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        justify-content: space-between;
+        padding: 15px;
+      }
+
+      .columnSec2 {
+        width: 100%;
+        background-color: rgb(95, 138, 170);
+      }
+      .tab3 {
+        width: 100%;
+      }
+
+      /* fin section deux */
+
+      /* debut section trois */
+
+      .section3 {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+      }
+
+      .column3 {
+        width: 45%;
+        background-color: rgb(95, 138, 170);
+      }
+      .tab3 {
+        width: 100%;
+      }
+      .tab31 {
+        float: left;
+        width: 100%;
+      }
+      .column32 {
+        width: 17%;
+      }
+      .tab32 {
+        background-color: rgb(95, 138, 170);
+        width: 100%;
+      }
+      .column33 {
+        width: 18%;
+      }
+      .tab33 {
+        background-color: rgb(95, 138, 170);
+        width: 100%;
+      }
+
+      /* fin section trois */
+
+      /* debut section quatre */
+
+      .section4 {
+        display: flex;
+        justify-items: end;
+        padding: 15px;
+      }
+
+      .column4 {
+        width: 100%;
+        float: right;
+      }
+      .tab41 {
+        width: 45%;
+        float: right;
+        background-color: rgb(95, 138, 170);
+      }
+
+      /* fin section quatre */
+
+      .coloTd {
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
+        border-left: solid;
+      }
+      .coloTdText {
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
+        text-align: left;
+        font-weight: bold;
+      }
+
+      .coloTdr {
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
+      }
+      .client {
+        border: 1px solid rgb(0, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <section style="display: flex; height: 300px"></section>
+
+    <div class="row">
+      <div class="column">
+        <table class="tab1">
+          <tr>
+            <td class="coloTdText">DATE</td>
+            <td class="coloTd">invoice_date</td>
+          </tr>
+          <tr>
+            <td class="coloTdText">ORIGINE</td>
+            <td class="coloTd">reference commande</td>
+          </tr>
+          <tr>
+            <td class="coloTdText">REF</td>
+            <td class="coloTd">reference facture</td>
+          </tr>
+          <tr>
+            <td class="coloTdText">Entrepôt</td>
+            <td class="coloTd">reference_magasin</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="column2">
+        <div class="columnSec2">
+          <table class="table2">
+            <tr>
+              <th class="client" colspan="2">CLIENT</th>
+            </tr>
+            <tr>
+              <td class="coloTdr" style="text-align: left">NOM</td>
+              <td class="coloTd">partener_id</td>
+            </tr>
+            <tr>
+              <td class="coloTdr" style="text-align: left">IFU</td>
+              <td class="coloTd">numero_ifu</td>
+            </tr>
+            <tr style="background-color: rgb(159, 28, 28)">
+              <td class="coloTdr" style="text-align: left"></td>
+              <td class="coloTd"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="section2">
+      <div class="columnSec2">
+        <table class="tab3">
+          <tr>
+            <th>Réf</th>
+            <th>Désignation</th>
+            <th>Qté</th>
+            <th>PU TTC</th>
+            <th>Remise</th>
+            <th>Montant HT</th>
+            <th>TVA</th>
+            <th>Montant TTC</th>
+          </tr>
+          <tr>
+            <td>internal_refer ence</td>
+            <td>Nom</td>
+            <td>Quantity</td>
+            <td></td>
+            <td>discount</td>
+            <td></td>
+            <td>amount_t ax</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div style="padding: 15px; margin-bottom: 15px; margin-top: -25px">
+      <hr style="height: 5px; width: 100%; background: rgb(0, 0, 0)" />
+    </div>
+
+    <div class="section3">
+      <div class="column3">
+        <table class="tab31">
+          <tr>
+            <th>Montant HT</th>
+            <th>TVA</th>
+            <th>AIB</th>
+            <th>Remise</th>
+          </tr>
+          <tr>
+            <td>Amount_auna xed</td>
+            <td>Amount_ta x(la somme)</td>
+            <td>Amount_ai b_taxe</td>
+            <td>Total_disc ount</td>
+          </tr>
+        </table>
+      </div>
+      <div class="column32">
+        <table class="tab32">
+          <tr>
+            <th>Solde Facture</th>
+          </tr>
+          <tr>
+            <td>Amount_risudu al</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="column33">
+        <table class="tab33">
+          <tr>
+            <th>Montant NET</th>
+          </tr>
+          <tr>
+            <td>Amount_total</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="section4">
+      <div class="column4">
+        <table class="tab41">
+          <tr>
+            <th>TYPE DE PAIEMENT</th>
+            <th>PAYE</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <section style="display: flex; height: 300px"></section>
+
+    <div
+      class="section5"
+      style="
+        margin-top: 5rem;
+        display: flex;
+        width: 100%;
+        margin-top: 40px;
+        justify-content: center;
+        border-width: 2px;
+      "
+    >
+      <div
+        class="column5"
+        style="
+          display: flex;
+          width: 70%;
+          justify-content: center;
+          border-width: 2px;
+          align-items: center;
+          border: solid rgb(26, 97, 141);
+        "
+      >
+        <div
+          class="left"
+          style="width: 30%; align-items: center; text-align: center"
+        >
+          <div>
+            <p>Code Qr</p>
+          </div>
+        </div>
+
+        <div
+          class="right"
+          style="
+            width: 70%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          "
+        >
+          <div style="width: 100%; align-items: center">
+            <div class="top" style="align-self: center; padding-right: 100px">
+              <p>Code MeCef/DGI</p>
+            </div>
+            <div
+              class="dotElement"
+              style="
+                height: 40px;
+                width: 70%;
+                background-color: #fff;
+                border-width: 2px;
+                align-self: center;
+                left: 100px;
+                border: dotted rgb(6, 5, 5);
+              "
+            ></div>
+            <div class="Info" style="padding-left: 100px; text-align: left">
+              <h6>MeCef Signature</h6>
+              <h6>MeCef NIM</h6>
+              <h6>MeCef Compte</h6>
+              <h6>MeCef Heure</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section6"
+      style="
+        width: 100%;
+        margin-top: 30px;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div
+        class="column6"
+        style="width: 100%; justify-content: center; align-items: center"
+      >
+        <div
+          style="
+            width: 30%;
+            float: right;
+            justify-content: flex-end;
+            text-align: left;
+          "
+        >
+          <p>Caissier(ere)</p>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
